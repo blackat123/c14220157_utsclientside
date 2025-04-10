@@ -60,8 +60,9 @@ function App() {
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
           placeholder="Add new todo..."
+          required
         />
-        <button type="submit" disabled={!newTodo.trim()} className="add-button">
+        <button type="submit" className="add-button">
           Add
         </button>
       </form>
